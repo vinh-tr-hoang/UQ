@@ -1,15 +1,18 @@
 # Notes on Uncertainty Quantification
 ## This repository contains notes and codes on uncertainty quantification
 
-### demo/mhmcmc_demo.py Metropolis Hasting Markov Chain Monte Carlo algorithm for solving inverse problems
+#### Metropolis Hasting Markov Chain Monte Carlo algorithm for solving inverse problems
+file: demo/mhmcmc_demo.py 
 
 ![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/mcmc.png)
 
-### demo/EnKF_demo.py Enesemble Kalman Filer for tracking Lorenz 63 system
+#### demo/EnKF_demo.py Enesemble Kalman Filer for tracking Lorenz 63 system
+file: demo/EnKF_demo.py
 
 ![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/EnKF.png)
 
-### demo/gpce_demo.py buid surrogate model using generalised polynomial chaos expansion 
+### Surrogate model using generalised polynomial chaos expansion 
+file: demo/gpce_demo.py
 
 ![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/gpce.png)
 
