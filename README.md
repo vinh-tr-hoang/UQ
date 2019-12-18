@@ -6,7 +6,7 @@ file: demo/mhmcmc_demo.py
 
 ![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/mcmc.png)
 
-#### demo/EnKF_demo.py Enesemble Kalman Filer for tracking Lorenz 63 system
+#### EnKF_demo.py Enesemble Kalman Filer for tracking Lorenz 63 system
 file: demo/EnKF_demo.py
 
 ![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/EnKF.png)
