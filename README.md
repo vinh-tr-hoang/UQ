@@ -20,4 +20,4 @@ file: demo/gpce_demo.py
 ### Regression using Gaussian process
 file: demo/gaussian_process.py
 
-![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/GP.pdf)
+![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/gp.png)
