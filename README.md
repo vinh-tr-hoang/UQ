@@ -1,5 +1,6 @@
 # Notes on Uncertainty Quantification
 ## This repository contains notes and codes on uncertainty quantification
+#### Author: Truong-Vinh Hoang,  vinh.tr.hoang[at]gmail.com, truong-vinh.hoang[at]tu-bs.de
 
 #### Metropolis Hasting Markov Chain Monte Carlo algorithm for solving inverse problems
 file: demo/mhmcmc_demo.py 
@@ -17,4 +18,3 @@ file: demo/gpce_demo.py
 ![alt text](https://github.com/vinh-tr-hoang/UQ/blob/master/demo/gpce.png)
 
 
-Author: Truong-Vinh Hoang,  vinh.tr.hoang[at]gmail.com, truong-vinh.hoang[at]tu-bs.de
