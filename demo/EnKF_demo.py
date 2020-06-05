@@ -5,11 +5,8 @@ Author: Truong-Vinh Hoang
 import numpy as np
 from scipy.stats import multivariate_normal, norm
 import matplotlib.pyplot as plt
-from lorenz_system import lorenz_system_63 as lorenz_system
+from model.lorenz_system import lorenz_system_63 as lorenz_system
 from scipy.integrate import odeint
-import os,sys
-my_path = os.path.dirname(os.path.realpath(__file__))
-sys.path.append(my_path+'/../model')
 
 # Lorenz system 
 ls = lorenz_system()
