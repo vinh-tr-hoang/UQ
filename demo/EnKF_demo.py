@@ -4,7 +4,6 @@ Author: Truong-Vinh Hoang
 """
 import numpy as np
 from scipy.stats import multivariate_normal, norm
-#from scipy.stats import gaussian_kde
 import matplotlib.pyplot as plt
 from lorenz_system import lorenz_system_63 as lorenz_system
 from scipy.integrate import odeint
@@ -114,11 +113,11 @@ errorEnKF =RMSE( np.mean(EnFK_assimilated_state[:,:, int(obs_step.size/2):], axi
 
 ########################      Visualisation    ################################
 plt.figure()
-if options["is_obsmap_linear"]:
-    plt.plot(t[obs_step],obs_noised[:,0], 's' , label ='noisy observation')
+#if options["is_obsmap_linear"]:
+#    plt.plot(t[obs_step],obs_noised[:,0], 's' , label ='noisy observation')
 
-plt.plot(t,true_state[:,0], '-r' , label =' true process')
-plt.plot(t[obs_step],np.mean(EnFK_assimilated_state[:,0,:], axis= 0), '-' , label = 'EnKF mean' )
+plt.plot(t,true_state[:,0], '-' , label =' true process')
+plt.plot(t[obs_step],np.mean(EnFK_assimilated_state[:,0,:], axis= 0), '--' , label = 'EnKF mean' )
 plt.xlabel('t', fontsize=16, color='black') 
 plt.ylabel('q[1]', fontsize=16, color='black') 
 plt.legend(loc = 'top left')
