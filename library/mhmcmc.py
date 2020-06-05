@@ -15,7 +15,12 @@ class mhmcmc:
             self.loglikelihood = kwargs['loglikelihood']
         else:
             self.loglikelihood = False
-        #self.max_rel_err_std
+        if '_func_kernelRatio' in kwargs:
+            self.kernelRatio = kwargs['_func_kernelRatio']
+        else:
+            self.kernelRatio = self.unitRatio
+    def unitRatio(self, xi,xj):
+        return 1.                      
     def run_MCMC(self, **kwargs): # kwargs: keep_rejected_point
         
         if 'x_int' in kwargs:
@@ -70,7 +75,9 @@ class mhmcmc:
                 successful_update = (np.log(temp) <= ratio) 
             else:
                 if (pdf_x_prev*pdf_epsilon_prev):
+                    kernelRatio = self.kernelRatio(self.x_MCMC[i-1,:],x)
                     ratio = (pdf_x_curr*pdf_epsilon_curr)/(pdf_x_prev*pdf_epsilon_prev)
+                    ratio = ratio*kernelRatio                     
                 else:
                     ratio =1.                                    
                 successful_update = (temp <= ratio) 
