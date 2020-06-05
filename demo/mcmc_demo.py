@@ -1,16 +1,9 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Mar 28 18:16:26 2019
-
-@author: truhoang
-"""
 import numpy as np
 from scipy.stats import norm, uniform, gaussian_kde, multivariate_normal
 import matplotlib.pyplot as plt
 import os, sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-mypath = os.path.join(project_root, 'library')
+mypath = os.path.join(project_root, 'model')
 sys.path.insert(0, mypath)
 from mhmcmc import mhmcmc
 
@@ -32,7 +25,7 @@ def likelihood (y):
     return measurement_error_dist.pdf(y - hat_y)
 
 np.random.seed(2)
-n_MCMC = 100000
+n_MCMC = 20000
 mcmcalgorithm = mhmcmc(prior_dist.pdf, prior_dist.rvs, 
                     likelihood, forward,
                     kernel_generator, n_MCMC, dim = 2, loglikelihood = False)
@@ -67,3 +60,4 @@ for j in range (0, 2):
     plt.legend()
     plt.xlabel('q')
     plt.ylabel('pdf')
+

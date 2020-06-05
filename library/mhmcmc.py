@@ -1,8 +1,4 @@
-"""
-Metropolis Hasting MCMC algorithm
-author Truong-Vinh Hoang
-"""
-from scipy.stats import norm, uniform, gaussian_kde
+from scipy.stats import uniform
 import numpy as np
 class mhmcmc:
     def __init__(self,_func_prior_pdf, _func_prior_gen, _func_likelihood,_func_model_,
@@ -53,9 +49,9 @@ class mhmcmc:
                         x = self.prior_gen ()
                         y = self.forward_model(x)
                 else:
-                   while self.likelihood(y) < 1.e-15:
-                       x = self.prior_gen () 
-                       y = self.forward_model(x)
+                    while self.likelihood(y) < 1.e-15:
+                        x = self.prior_gen () 
+                        y = self.forward_model(x)
                    
                 number_repeated_sample = 0  
             if ((number_repeated_sample < 100)): # Generate new samples 

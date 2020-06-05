@@ -1,9 +1,5 @@
-"""
-Generalized polynomial chaos expansion
-Author: Truong-Vinh Hoang
-"""
 import numpy as np
-from scipy.stats import norm, uniform, gaussian_kde
+from scipy.stats import uniform
 import scipy.special as sp
 from numpy import poly1d
 

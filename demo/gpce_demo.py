@@ -1,6 +1,5 @@
 """
 surrogate model using generalized polynomial chaos expansion
-Author: Truong-Vinh Hoang
 """
 import numpy as np
 from scipy.stats import uniform

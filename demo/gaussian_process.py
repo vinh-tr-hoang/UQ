@@ -1,11 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct  9 16:42:44 2019
-
-@author: Truong Vinh Hoang
-"""
-
 import numpy as np 
 from scipy.stats import norm, uniform
 
@@ -53,4 +45,3 @@ plt.plot(x, y_m-y_sigma ,'--b', label = '1 sigma', linewidth = 2)
 plt.plot(x, y_m+y_sigma ,'--b', linewidth = 2)
 plt.ylim([-1.5,3])
 plt.legend()
-plt.savefig('GP.pdf') 
