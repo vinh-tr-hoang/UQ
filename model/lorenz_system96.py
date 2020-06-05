@@ -1,11 +1,9 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
 Lorenz system 96
 """
-
 from scipy.integrate import odeint
 from scipy.stats import norm
+import numpy as np
 
 class lorenz_system:
     def __init__(self, N = 40, F = 8):

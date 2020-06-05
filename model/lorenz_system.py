@@ -1,8 +1,5 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
 Lorenz system  
-Author Truong-Vinh Hoang
 """
 from scipy.integrate import odeint
 from scipy.stats import norm
